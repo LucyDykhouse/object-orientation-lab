@@ -39,23 +39,29 @@ console.log(dog['color']);
   Have the values to those keys be strings that are equal to your favorite thing in that category.
 */
 
-//Code here
-
+let favoriteThings = {
+  band: "Supertramp",
+  food: "Blueberries",
+  person: "My mom",
+  book: "Gilead",
+  movie: "Awakenings",
+  holiday: "Thanksgiving"
+};
 
 /*
   After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car and then another key named 'show' with the value being your favorite show.
 */
 
-//Code here
-
+favoriteThings.car = "2009 Outback";
+favoriteThings.show = "Breaking Bad";
 
 /*
   Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
   and change the value of the book key in your favoriteThings object to be 'Harry Potter'. (If they were either of those things already, change them to something else.)
 */
 
-//Code here
-
+favoriteThings.food = "Chicken nuggets";
+favoriteThings.book = "Harry Potter";
 
 //////////////////////////// PROBLEM 6 ////////////////////////////
 
@@ -72,9 +78,7 @@ var carDetails = {
   Use object destructuring to save the property values from the object carDetails into new variables. 
 */
 
-//Code Here
-
-
+let {color, make, model, year} = carDetails;
 
 //////////////////////////// PROBLEM 7 ////////////////////////////
 
@@ -85,14 +89,11 @@ var carDetails = {
 */
 
 function greeting( obj ) {
-  //Code Here
-  
+  let {title, firstName, lastName} = obj;
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
 }
-
-
 
 //////////////////////////// PROBLEM 8 ////////////////////////////
 
@@ -104,8 +105,10 @@ function greeting( obj ) {
   Sum up the values and return the total number.
 */
 
-//Code Here
-
+function totalPopulation(obj) {
+  let {utahPop, caPop, texasPop, azPop} = obj;
+  return utahPop + caPop + texasPop + azPop;
+}
 
 
 //////////////////////////// PROBLEM 9 ////////////////////////////
@@ -118,8 +121,10 @@ function greeting( obj ) {
   Push these new variables to an array and return the array. 
 */
 
-//Code Here
-
+function ingredients(obj) {
+  let {carb, fat, protein} = obj;
+  return [carb, fat, protein];
+}
 
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
