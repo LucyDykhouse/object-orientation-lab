@@ -4,9 +4,10 @@
   Give it a key of name with the value being your name, and another key of age with the value being your age.
 */
 
-//Code here
-
-
+let me = {
+  name: "Lucy",
+  age: 23
+};
 
 //////////////////////////// PROBLEM 2 ////////////////////////////
 
@@ -15,23 +16,22 @@
 //name (a string), color (a string), age (a number),
 //and goodBoy/goodGirl (a boolean).
 
-//Code here
-
-
+let dog = {
+  name: "Wilbur",
+  color: "Black",
+  age: 6,
+  goodBoy: true
+};
 
 //////////////////////////// PROBLEM 3 ////////////////////////////
 /* Print out the name of the dog you created in problem 2 using dot-notation. */
 
-//Code here
-
-
+console.log(dog.name);
 
 //////////////////////////// PROBLEM 4 ////////////////////////////
 /* Print out the color of the dog you created in problem 2 using bracket-notation. */
 
-//Code here
-
-
+console.log(dog['color']);
 
 //////////////////////////// PROBLEM 5 ////////////////////////////
 /*
